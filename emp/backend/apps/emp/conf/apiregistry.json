@@ -1,0 +1,8 @@
+{
+    "/apis/insert" : "/apis/insert.js?needsToken=false&addsToken=sub:access",
+    "/apis/getdata" : "/apis/getdata.js?needsToken=false&addsToken=sub:access",
+    "/apis/del" : "/apis/del.js?needsToken=false&addsToken=sub:access",
+    "/apis/update" : "/apis/update.js?needsToken=false&addsToken=sub:access"
+    
+    
+}
