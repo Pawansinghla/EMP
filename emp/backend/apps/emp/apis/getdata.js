@@ -8,7 +8,7 @@ exports.doService =  (jsonReq) =>{
     return new Promise((resolve, reject) => {
         try {
             console.log(jsonReq.roll);
-            conn.query(`select * from student where empid='${jsonReq.empid}'`, (err, rows, fields) => {  
+            conn.query(`select * from employee where empid='${jsonReq.empid}'`, (err, rows, fields) => {  
                 if(!err) {
                     return resolve(rows);
                 }

@@ -18,10 +18,12 @@ minimum-scale=0.5 maximum-scale=1.0">
 <script type="text/javascript">$$.boot(new URL("./", window.location));</script>
 <script type="module">
     import { update_record } from "./components/update-record/update-record.mjs"; update_record.register();
+    import { navbar_com } from "./components/navbar-com/navbar-com.mjs"; navbar_com.register();
 </script>
 
 </head>
 <body>
+    <navbar-com></navbar-com>
     <!-- <h1 style="text-align: center;color: red;"></h1> -->
     <h1 style="text-align: center;color: black;">Update Emp Details</h1>
     <update-record></update-record>

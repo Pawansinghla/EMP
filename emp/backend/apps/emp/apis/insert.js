@@ -9,7 +9,7 @@ exports.doService =  (jsonReq) =>{
     return new Promise((resolve, reject) => {
         try {
           
-            conn.query(`insert into student values('${jsonReq.empid}', '${jsonReq.name}', '${jsonReq.designation}')`, (err, rows, fields) => {
+            conn.query(`insert into employee values('${jsonReq.empid}', '${jsonReq.name}', '${jsonReq.designation}')`, (err, rows, fields) => {
                 if(!err) {
                     return resolve(rows);
                 }

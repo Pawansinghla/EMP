@@ -9,7 +9,7 @@ exports.doService =  (jsonReq) =>{
     return new Promise((resolve, reject) => {
         try {
           
-            conn.query(`delete from student where empid = '${jsonReq.empid}'`, (err, rows, fields) => {
+            conn.query(`delete from employee where empid = '${jsonReq.empid}'`, (err, rows, fields) => {
                 if(!err) {
                     return resolve(rows);
                 }

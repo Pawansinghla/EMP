@@ -18,11 +18,13 @@ minimum-scale=0.5 maximum-scale=1.0">
 <script type="text/javascript">$$.boot(new URL("./", window.location));</script>
 <script type="module">
     import { delete_record } from "./components/delete-record/delete-record.mjs"; delete_record.register();
+    import { navbar_com } from "./components/navbar-com/navbar-com.mjs"; navbar_com.register();
 </script>
 
 </head>
 <body>
     <!-- <h1 style="text-align: center;color: red;">Welcome to Saraswati ShiShu Vidya Mandir</h1> -->
+    <navbar-com></navbar-com>
     <h1 style="text-align: center;color: black;">Delete Emp Detail</h1>
     <delete-record></delete-record>
 </body>

@@ -8,7 +8,7 @@ exports.doService =  (jsonReq) =>{
 
     return new Promise((resolve, reject) => {
         try {
-            conn.query(`update student set name = '${jsonReq.name}', designation = '${jsonReq.designation}' where empid = '${jsonReq.empid}'`, (err, rows, fields) => {
+            conn.query(`update employee set name = '${jsonReq.name}', designation = '${jsonReq.designation}' where empid = '${jsonReq.empid}'`, (err, rows, fields) => {
                 if(!err) {
                     return resolve(rows);
                 }

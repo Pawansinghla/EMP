@@ -5,7 +5,7 @@ import { APP_CONSTANTS } from "../../js/constants.mjs";
 
 
 var validate = () => {
-    var empid= form_stud.shadowRoot.getElementById("empid").value;
+    var empid= emp_data.shadowRoot.getElementById("empid").value;
     empid=parseInt(empid);
     console.log(empid);
 
@@ -18,14 +18,16 @@ var getAttData = async(empid) => {
    
     let respObj = await apiman.rest(APP_CONSTANTS.GET_DATA, "POST", {empid}, false,false);
     console.log(respObj);
-    console.log(respObj.length);
+   // console.log(respObj.length);
     if(respObj.length == 1) {
-       /* let target = document.querySelector("res-form").shadowRoot.querySelector("#sri");
+        console.log(respObj[0].empid);
+        console.log(respObj[0].name);
+       let target = document.querySelector("emp-data").shadowRoot.querySelector("#data");
         target.style.display = "block";
-        target.querySelector("#iname").innerHTML = respObj[0].name;
-        target.querySelector("#iroll").innerHTML = respObj[0].roll;
-        target.querySelector("#iclass").innerHTML =respObj[0].class;
-        */
+        target.querySelector("#empid").innerHTML = respObj[0].empid;
+        target.querySelector("#name").innerHTML = respObj[0].name;
+        target.querySelector("#designation").innerHTML =respObj[0].designation;
+        
     
     }
     else {

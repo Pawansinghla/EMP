@@ -18,10 +18,12 @@ minimum-scale=0.5 maximum-scale=1.0">
 <script type="text/javascript">$$.boot(new URL("./", window.location));</script>
 <script type="module">
     import { emp_data } from "./components/emp-data/emp-data.mjs"; emp_data.register();
+    import { navbar_com } from "./components/navbar-com/navbar-com.mjs"; navbar_com.register();
 </script>
 
 </head>
 <body>
+    <navbar-com></navbar-com>
     <!-- <h1 style="text-align: center;color: red;">Welcome to Saraswati ShiShu Vidya Mandir</h1> -->
     <h1 style="text-align: center;color: black;">Get Emp Details</h1>
     <emp-data></emp-data>
