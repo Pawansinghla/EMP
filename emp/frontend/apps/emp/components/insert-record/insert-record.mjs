@@ -13,10 +13,12 @@ var insert = async() => {
     
     let respObj = await apiman.rest(APP_CONSTANTS.INS_DATA, "POST", {empid, name, designation}, false, false);
     console.log(respObj);
-    if(respObj.affectedRows > 0) {
+    if(respObj.affectedRows > 0) {  
         alert("Data inserted");
        router.reload();
-    } 
+    }
+    
+  //  insert_record.shadowRoot.getElementById("empForm").reset();
      
 }
 
