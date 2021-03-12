@@ -20,8 +20,8 @@ var getAttData = async(empid) => {
     console.log(respObj);
    // console.log(respObj.length);
     if(respObj.length == 1) {
-        console.log(respObj[0].empid);
-        console.log(respObj[0].name);
+      //  console.log(respObj[0].empid);
+        //console.log(respObj[0].name);
        let target = document.querySelector("emp-data").shadowRoot.querySelector("#data");
         target.style.display = "block";
         target.querySelector("#empid").innerHTML = respObj[0].empid;

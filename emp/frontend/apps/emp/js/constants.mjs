@@ -29,7 +29,7 @@ export const APP_CONSTANTS = {
  PERMISSIONS_MAP: {
  user: [
  //APP_PATH + "/index.html",
- APP_PATH + "/home.html",
+ 
  APP_PATH + "/data.html",
  APP_PATH + "/insert.html",
  APP_PATH + "/delete.html",
@@ -39,7 +39,7 @@ export const APP_CONSTANTS = {
 
  guest: [
   //APP_PATH + "/index.html",
-  APP_PATH + "/home.html",
+  
   APP_PATH + "/data.html",
   APP_PATH + "/insert.html",
   APP_PATH + "/delete.html",

@@ -5,7 +5,8 @@ Monkshu - The HTML5/REST/JSON/Node.js/API Enterprise Application Server - JAMSta
 =============================================================================================
 A complete Enterprise Application Server for Mobile apps (iOS and Android), Responsive HTML 5 Apps, and JSON API services. Consists of web container (called frontend), JSON API container (called backend), and hybrid iOS and Android app frameworks. 
 
-Monkshu is 100% compliant with [JAMStack](https://jamstack.org) standards for modern web development. 
+Monkshu is 100% compliant with [JAMStack]
+) standards for modern web development. 
 
 Fully independent - Monkshu is built ground up to not require any other dependencies other than base Node.js. Includes embedded HTTP servers as well.
 
